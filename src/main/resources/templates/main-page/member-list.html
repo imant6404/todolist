@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Member task page</title>
+</head>
+<body>
+<nav>
+    <div class="row nav-row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <a class="nav-bar-link" th:href="@{/main-page/list}">Главная</a>
+                    </div>
+                    <div class="col-4" style="text-align: right">
+                        <a class="nav-bar-link" th:href="@{/author/logout}">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="page-title">
+        <h2>Список задач</h2>
+    </div>
+    <div class="border-padding">
+        <a th:href="@{/task/task-form}" class="add-button">Добавить задачу</a>
+    </div>
+    <div class="container">
+        <div class="row table-row task-nav">
+            <div class="col-2 task-nav-box">
+                <a th:href="@{../main-page/list}" class="task-nav-link">Мои задачи</a>
+            </div>
+            <div class="col-3 task-nav-box">
+                <a th:href="@{../main-page/member-list}" class="task-nav-link">Участие в задачах</a>
+            </div>
+            <div class="col-7 task-nav-link"></div>
+        </div>
+        <div class="row table-row table-header">
+            <div class="col-2 table-item-height">Автор</div>
+            <div class="col-10 table-item-height">Название</div>
+        </div>
+
+        <div class="row " th:each="task : ${memberTaskList}">
+            <div class="col-2 table-item-height">
+                <span th:text="${task.author.firstName}"></span>
+            </div>
+            <div class="col-7 table-item-height">
+                <a th:href="@{../task/task-page(taskId=${task.id})}"
+                   th:text="${task.taskTitle}"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

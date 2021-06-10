@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<nav>
+    <div class="row nav-row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <a class="nav-bar-link" th:href="@{/main-page/list}">Главная</a>
+                    </div>
+                    <div class="col-4" style="text-align: right">
+                        <a class="nav-bar-link" th:href="@{/author/logout}">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-sm">
+    <div class="page-title">
+        <h2>Что то пошло не так. Вернитесь на главную страницу</h2>
+    </div>
+    <hr>
+    <a th:href="@{/task/list}">Назад к списку задач</a>
+</div>
+</body>
+</html>

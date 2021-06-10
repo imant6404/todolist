@@ -1,0 +1,153 @@
+.nav-row {
+    padding: 15px 0;
+    background-color: #0d6efd;
+}
+
+.nav-bar {
+    font-size: 12pt;
+    color: white;
+}
+
+.nav-bar-link {
+    font-size: 12pt;
+    color: white;
+}
+
+.nav-bar-link:hover {
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+.page-title {
+    padding: 20px 0;
+}
+
+.table-header {
+    border-bottom: 1px solid #b5b5b5;
+    font-weight: bold;
+}
+
+.table-rows {
+    border-bottom: 1px solid #b5b5b5;
+    color: black;
+}
+
+.table-item-height {
+    padding: 10px 0;
+}
+
+.table-action {
+    text-align: right;
+}
+
+/*-----------------------------Buttons*/
+.border-padding {
+    padding: 15px 0;
+}
+
+.add-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0d6efd;
+    background-color: white;
+    border: 2px solid #b5b5b5;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.add-button:hover {
+    color: #0d6efd;
+    text-decoration: none;
+    border: 2px solid #0d6efd;
+    background-color: white;
+}
+
+.delete-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fd0d0d;
+    border: 2px solid #b5b5b5;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.delete-button:hover {
+    color: #fd0d0d;
+    text-decoration: none;
+    border: 2px solid #fd0d0d;
+}
+
+.update-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fdc90d;
+    border: 2px solid #b5b5b5;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.update-button:hover {
+    color: #fdc90d;
+    text-decoration: none;
+    border: 2px solid #fdc90d;
+}
+
+/*-----------------------------Task page*/
+.task-title {
+    color: #585858;
+    padding: 10px 0;
+}
+
+.task-sm-title {
+    font-weight: bolder;
+    color: #000000;
+    padding: 10px 0;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.members-bar {
+    text-align: center;
+}
+
+.member-bar-item {
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.task-nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.task-nav-box {
+    text-align: center;
+    padding: 20px 0;
+    color: #4f4f4f;
+}
+
+.task-nav-box:hover {
+    background-color: #f3f2f2;
+}
+
+.task-nav-link {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-weight: bold;
+}
+
+.task-nav-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/*-----------------------------Comments block*/
+.comment-bar {
+    padding: 15px 0;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.comment-text {
+    font-size: 10pt;
+    text-align: justify;
+    color: #585858;
+}
